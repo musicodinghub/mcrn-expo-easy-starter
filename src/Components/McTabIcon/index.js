@@ -1,5 +1,5 @@
 import React from 'react';
-import { McIcon } from 'Components';
+import McIcon from './McIcon';
 
 const McTabIcon = ({ icon, color, size }) => (
   <McIcon
