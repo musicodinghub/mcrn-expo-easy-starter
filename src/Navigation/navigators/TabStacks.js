@@ -3,14 +3,14 @@ import { Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Tabs from './Tabs';
-import { Home, Profile } from 'Screens';
+import { Profile } from 'Screens';
 
 const Stack = createStackNavigator();
 
-const HomeStack = ({ params }) => (
+const TabStacks = ({ params }) => (
   <Stack.Navigator>
     <Stack.Screen
-      name="Home"
+      name="Tabs"
       component={Tabs}
       options={{
         headerShown: false,
@@ -26,4 +26,4 @@ const HomeStack = ({ params }) => (
   </Stack.Navigator>
 );
 
-export default HomeStack;
+export default TabStacks;

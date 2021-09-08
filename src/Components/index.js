@@ -4,5 +4,6 @@ import McAvatar from './McAvatar';
 import McIcon from './McIcon';
 import McVectorIcon from './McVectorIcon';
 import McBadge from './McBadge';
+import McTabIcon from './McTabIcon';
 
-export { McText, McAvatar, McImage, McIcon, McVectorIcon, McBadge };
+export { McText, McAvatar, McImage, McIcon, McVectorIcon, McBadge, McTabIcon };
