@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Switch } from 'react-native';
+import { View, Switch, Button } from 'react-native';
 import styled from 'styled-components/native';
 
 import { useTheme, Fonts, Images, Metrics } from 'Themes';
 import { McText, McImage, PlayButton } from 'Components';
 
-const Profile = ({ params }) => {
+const Profile = ({ navigation }) => {
   const theme = useTheme();
   return (
     <Container>
@@ -20,6 +20,12 @@ const Profile = ({ params }) => {
           }}
         />
       </SwitchSection>
+      <Button
+        onPress={() => {
+          navigation.navigate('Home');
+        }}
+        title="Back"
+      ></Button>
     </Container>
   );
 };

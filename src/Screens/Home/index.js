@@ -1,14 +1,23 @@
 import React from 'react';
 import { View, Switch, Button } from 'react-native';
-import styled from 'styled-components/native';
+import styled, { useTheme } from 'styled-components/native';
 
 import { Fonts, Images, Metrics } from 'Constants';
-import { McText, McImage, PlayButton } from 'Components';
+import { McText, McImage, McAvatar } from 'Components';
 
 const Home = ({ navigation }) => {
+  const { colors } = useTheme();
   return (
     <Container>
-      <Text>Home Screen</Text>
+      <McAvatar
+        source={require('Assets/images/musicoding.png')}
+        size={100}
+        round
+        style={{ marginBottom: 30 }}
+      ></McAvatar>
+      <McText bold size={24} color={colors.text} style={{ marginBottom: 30 }}>
+        MCRN Expo Easy Starter
+      </McText>
       <Button
         onPress={() => {
           navigation.navigate('Profile');
