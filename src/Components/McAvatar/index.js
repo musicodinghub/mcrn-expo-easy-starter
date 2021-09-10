@@ -8,7 +8,7 @@ const McAvatar = ({ source, size, ...rest }) => {
 };
 
 McAvatar.propTypes = {
-  source: PropTypes.object.isRequired,
+  source: PropTypes.number.isRequired,
   size: PropTypes.number,
   onPress: PropTypes.func,
 };
